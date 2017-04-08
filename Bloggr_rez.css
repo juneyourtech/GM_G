@@ -1,3 +1,11 @@
+@-moz-document domain('www.blogger.com') {
+/* Posts list URL:
+https://www.blogger.com/blogger.g?blogID=|NUMBERS|#allposts
+
+Blog edit URL:
+https://www.blogger.com/blogger.g?blogID=|NUMBERS|#editor/target=post;postID=|NUMBERS|;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=0;src=link
+*/
+
 HTML > BODY {min-width:320px;}
 /* Original min-width:1100px */
 
@@ -37,3 +45,13 @@ BODY.bo2 .OYKEW4D-c-c {color:navy; opacity:1.0;}
 /* POSTS LIST: TABLE: blog action links */
 TABLE.bloggPostTable .blogg-visible-on-select {visibility:visible;}
 BODY.bo2 .bloggPostTable .blogg-visible-on-select {opacity:1.0;}
+}
+
+/*
+https://www.blogger.com/
+blogger.g?blogID=|NUMBERS|#editor/target=post;postID=|NUMBERS|;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=0;src=link
+*/
+
+@-moz-document regexp('https://www\\.blogger\\.com/blogger\\.g\\?blogID\\=*\\#editor/.*') {
+HTML > BODY {min-width:514px; background-color:navy;}
+}
