@@ -33,7 +33,7 @@ GM_addStyle("DIV.OYKEW4D-i-n {padding-right:0px; padding-left:241px;}")
 GM_addStyle("DIV.editPosts {overflow-x:auto;}")
 
 //POSTS TABLE
-GM_addStyle("TABLE.bloggPostTable {table-layout:auto;}")
+GM_addStyle("TABLE.bloggPostTable {table-layout:auto !important;}")
 
 //POSTS TABLE COLUMN WIDTHS (above made pointless by auto table-layout)
 GM_addStyle("BODY.lang_en TABLE.bloggPostTable COLGROUP > COL:last-child {width:5.7em;}")
