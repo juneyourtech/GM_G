@@ -1,0 +1,32 @@
+HTML > BODY {min-width:320px;}
+/* Original min-width:1100px */
+
+BODY.bo2 a:link {color:blue;}
+
+BODY.bo2 a:visited {color:navy;}
+
+/* MAIN CONTENT */
+DIV.OYKEW4D-e-e {min-width:240px;}
+/* Original min-width:1100px */
+
+DIV.OYKEW4D-e-d {min-width:240px;}
+/* Original min-width:1100px */
+
+/* POSTS: This is the big one with lots of paddings originally */
+DIV.OYKEW4D-i-n {padding-right:0px; padding-left:241px;}
+
+/* POSTS TABLE COLUMN WIDTHS */
+BODY.lang_en TABLE.bloggPostTable COLGROUP > COL:last-child {width:5.7em;}
+
+/* POST LISTS: TABLE: CELLS (widths are set at colgroup above in table code) */
+TD.OYKEW4D-p-a {padding:8px 0px; vertical-align:top;}
+
+/* POSTS LIST: TABLE: BLOG LINKS */
+A.OYKEW4D-c-g {overflow:initial; text-overflow:inherit; white-space:normal; text-decoration:underline; color:navy;}
+/* unset or inherit */
+
+/* POSTS LIST: TABLE: Blog tags */
+BODY.bo2 .OYKEW4D-c-c {color:navy; opacity:1.0;}
+
+/* POSTS LIST: TABLE: blog action links */
+TABLE.bloggPostTable .blogg-visible-on-select {visibility:visible; opacity:1.0;}
