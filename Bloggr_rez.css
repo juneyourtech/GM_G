@@ -21,7 +21,7 @@ DIV.OYKEW4D-i-n {padding-right:0px; padding-left:241px;}
 DIV.editPosts {overflow-x:auto;}
 
 /* POSTS TABLE */
-TABLE.bloggPostTable {table-layout:auto;}
+TABLE.bloggPostTable {table-layout:auto !important;}
 
 /* POSTS TABLE COLUMN WIDTHS (above made pointless by auto table-layout) */
 BODY.lang_en TABLE.bloggPostTable COLGROUP > COL:last-child {width:5.7em;}
