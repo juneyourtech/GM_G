@@ -35,4 +35,5 @@ A.OYKEW4D-c-g {overflow:initial; text-overflow:inherit; white-space:normal; text
 BODY.bo2 .OYKEW4D-c-c {color:navy; opacity:1.0;}
 
 /* POSTS LIST: TABLE: blog action links */
-TABLE.bloggPostTable .blogg-visible-on-select {visibility:visible; opacity:1.0;}
+TABLE.bloggPostTable .blogg-visible-on-select {visibility:visible;}
+BODY.bo2 .bloggPostTable .blogg-visible-on-select {opacity:1.0;}
