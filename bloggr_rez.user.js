@@ -49,7 +49,9 @@ GM_addStyle("A.OYKEW4D-c-g {overflow:initial; text-overflow:inherit; white-space
 GM_addStyle("BODY.bo2 .OYKEW4D-c-c {color:navy; opacity:1.0;}")
 
 //POSTS LIST: TABLE: blog action links
-GM_addStyle("TABLE.bloggPostTable .blogg-visible-on-select {visibility:visible; opacity:1.0;}")
+GM_addStyle("TABLE.bloggPostTable .blogg-visible-on-select {visibility:visible;}")
+
+GM_addStyle("BODY.bo2 .bloggPostTable .blogg-visible-on-select {opacity:1.0;}")
 
 //GM_addStyle("@media only screen and (max-width:910px) {SELECTOR {width:100%;} }")
 
