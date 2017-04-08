@@ -1,8 +1,8 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name          Bloggr Rez Beta
 // @namespace     Bloggr_lowerres
 // @description  Site layout improvements for smaller-resolution displays, such as 1024x768 and 800x600 px. (All trademarks are belong to their respective owners.)
-// @version 0.7.0.1
+// @version 0.7.0.2
 // @updateURL https://github.com/juneyourtech/GM_G/raw/master/bloggr_rez.user.js
 // @include       *.blogger.com/*
 // @grant         GM_addStyle
@@ -29,7 +29,13 @@ GM_addStyle("DIV.OYKEW4D-e-d {min-width:240px;}")
 //POSTS: This is the big one with lots of paddings originally
 GM_addStyle("DIV.OYKEW4D-i-n {padding-right:0px; padding-left:241px;}")
 
-//POSTS TABLE COLUMN WIDTHS
+//
+GM_addStyle("DIV.editPosts {overflow-x:auto;}")
+
+//POSTS TABLE
+GM_addStyle("TABLE.bloggPostTable {table-layout:auto;}")
+
+//POSTS TABLE COLUMN WIDTHS (above made pointless by auto table-layout)
 GM_addStyle("BODY.lang_en TABLE.bloggPostTable COLGROUP > COL:last-child {width:5.7em;}")
 
 //POST LISTS: TABLE: CELLS (widths are set at colgroup above in table code)
