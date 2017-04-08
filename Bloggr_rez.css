@@ -15,7 +15,13 @@ DIV.OYKEW4D-e-d {min-width:240px;}
 /* POSTS: This is the big one with lots of paddings originally */
 DIV.OYKEW4D-i-n {padding-right:0px; padding-left:241px;}
 
-/* POSTS TABLE COLUMN WIDTHS */
+/* POSTS TABLE CONTAINER */
+DIV.editPosts {overflow-x:auto;}
+
+/* POSTS TABLE */
+TABLE.bloggPostTable {table-layout:auto;}
+
+/* POSTS TABLE COLUMN WIDTHS (above made pointless by auto table-layout) */
 BODY.lang_en TABLE.bloggPostTable COLGROUP > COL:last-child {width:5.7em;}
 
 /* POST LISTS: TABLE: CELLS (widths are set at colgroup above in table code) */
