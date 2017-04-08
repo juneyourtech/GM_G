@@ -2,8 +2,8 @@
 // @name          Bloggr Rez Beta
 // @namespace     Bloggr_lowerres
 // @description  Site layout improvements for smaller-resolution displays, such as 1024x768 and 800x600 px. (All trademarks are belong to their respective owners.)
-// @version 0.7.0.0
-// @updateURL https://github.com/juneyourtech/GM_G/raw/master/Bloggr_rez.user.js
+// @version 0.7.0.1
+// @updateURL https://github.com/juneyourtech/GM_G/raw/master/bloggr_rez.user.js
 // @include       *.blogger.com/*
 // @grant         GM_addStyle
 // ==/UserScript==
