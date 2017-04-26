@@ -27,15 +27,15 @@ DIV.gb_df > .gb_R {line-height:22px;}
 DIV.g-Ue-kc {width:75%; max-width:400px;}
 /* original width:400px; 81%; */
 
-/* chat window | these are inside an iframe, which should be excluded now (26.04.2017). 
-   If this doesn't work, I'll uncomment these lines. */
-/* DIV.Cl {right:1px !important;} */
+/* CHAT WINDOW */
+DIV.Cl {right:0px !important;}
 
+/* CHAT WINDOW: these are inside an iframe, which should be excluded now (26.04.2017). */
 /* chat window title (name) widths to show controls */
 /* DIV.xB {width:55%;} */
 
-/* This tests to see, if stuff works. */
-DIV.xB {border:solid 1px yellow;}
+/* This tests to see, if stuff works. Comment in, when not needed. */
+/* DIV.xB {border:solid 1px yellow;} */
 
 /* chat window text */
 /* DIV.tk {width:86%;} */
