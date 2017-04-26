@@ -1,4 +1,4 @@
-@-moz-document domain('hangouts.google.com'), regexp('(?!https://hangouts\\.google\\.com/webchat/frame*)') {
+@-moz-document domain('hangouts.google.com'), regexp('(?!hangouts\\.google\\.com\\/webchat\\/frame.*)') {
 
 @media only screen and (max-width:320px) { HTML, BODY {width:320px;}  DIV.g-Ue-Ja-t {max-width:320px;}  DIV.Cl {height:375px !important; width:255px !important; right:3px !important;}  DIV.Ih {width:100%;} }
 
@@ -20,7 +20,8 @@ DIV.g-Ue-ad {min-height:320px;}
 DIV.g-Ue-kc {width:75%; max-width:400px;}
 /* original width:400px; 81%; */
 
-/* chat window | these are inside an iframe, which should be excluded now (26.04.2017). */
+/* chat window | these are inside an iframe, which should be excluded now (26.04.2017). 
+   If this doesn't work, I'll uncomment these lines. */
 /* DIV.Cl {right:1px !important;} */
 
 /* chat window title (name) widths to show controls */
