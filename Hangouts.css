@@ -19,6 +19,9 @@ DIV.g-Ue-Ja-t {min-width:310px; min-height:320px;}
 
 DIV.g-Ue-ad {min-height:320px;}
 
+/* Hangouts logo height adjustment: */
+GM_addStyle("DIV.gb_df > .gb_R {height:24px; line-height:22px;}")
+   
 /* Contacts */
 DIV.g-Ue-kc {width:75%; max-width:400px;}
 /* original width:400px; 81%; */
