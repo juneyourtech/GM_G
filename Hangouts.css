@@ -20,8 +20,8 @@ DIV.g-Ue-Ja-t {min-width:310px; min-height:320px;}
 DIV.g-Ue-ad {min-height:320px;}
 
 /* Hangouts logo height adjustment: */
-DIV.gb_df {height:24px;}
-DIV.gb_df > .gb_R {height:24px; line-height:22px;}
+DIV#gba, DIV.gb_df, DIV.gb_df > .gb_R {height:24px;}
+DIV.gb_df > .gb_R {line-height:22px;}
    
 /* Contacts */
 DIV.g-Ue-kc {width:75%; max-width:400px;}
