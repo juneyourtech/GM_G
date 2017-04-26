@@ -1,5 +1,10 @@
-@-moz-document domain('hangouts.google.com'), regexp('(?!https://hangouts\\.google\\.com/webchat/frame.*)') {
-/* Note here, that only dots must be escaped, per Stylish wiki. */
+@-moz-document regexp('https://hangouts\\.google\\.com/(?!webchat/frame).*') {
+/* , regexp('(?!https://hangouts\\.google\\.com/webchat/frame.*)')
+                                  ^        ^
+   Note here, that only actual URL dots must be escaped, per Stylish wiki.
+   Other useful notes:
+   https://github.com/stylish-userstyles/stylish/wiki/Applying-styles-to-specific-sites
+   */
 @media only screen and (max-width:320px) { HTML, BODY {width:320px;}  DIV.g-Ue-Ja-t {max-width:320px;}  DIV.Cl {height:375px !important; width:255px !important; right:3px !important;}  DIV.Ih {width:100%;} }
 
 /* DIV.g-Ue-Ja-t : most of it; was: 628px
@@ -26,6 +31,9 @@ DIV.g-Ue-kc {width:75%; max-width:400px;}
 
 /* chat window title (name) widths to show controls */
 /* DIV.xB {width:55%;} */
+
+/* This tests to see, if stuff works. */
+DIV.xB {border:solid 1px yellow;}
 
 /* chat window text */
 /* DIV.tk {width:86%;} */
