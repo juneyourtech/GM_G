@@ -3,11 +3,10 @@
    per Stylish wiki:
 https://github.com/stylish-userstyles/stylish/wiki/Applying-styles-to-specific-sites
    */
-@media only screen and (max-width:320px) { HTML, BODY {width:320px;}  DIV.g-Ue-Ja-t {max-width:320px;}  DIV.Cl {height:375px !important; width:255px !important; right:3px !important;}  DIV.Ih {width:100%;} }
-
+@media only screen and (max-width:320px) { HTML, BODY {width:320px;}  DIV.g-Ue-Ja-t {max-width:320px;}  DIV.Cl {max-width:255px !important;}  DIV.Ih {width:100%;} }
 /* DIV.g-Ue-Ja-t : most of it; was: 628px
-   DIV.Cl - chat window height
-   DIV.Ih - chat window contents. Used overflow-x:auto, but it doesn't quite seem to work. 100% was before, but not necessarily original.
+ • DIV.Cl : chat window. height:375px !important; width:255px !important;
+ • DIV.Ih : chat window contents.
    Use important, because there are many rules applied to element via JavaScript. */
 
 /* 320. top block, w. login stuff */
@@ -23,18 +22,61 @@ DIV.g-Ue-ad {min-height:320px;}
 DIV#gba, DIV.gb_df, DIV.gb_df > .gb_R {height:24px;}
 DIV.gb_df > .gb_R {line-height:22px;}
    
-/* Contacts */
+/* CONTACTS */
 DIV.g-Ue-kc {width:75%; max-width:400px;}
 /* original width:400px; 81%; */
 
 /* CHAT WINDOW */
-DIV.Cl {right:0px !important;}
+/* Below rule:
+• right: can safely be set to 0px, since I got the hang wrt bottom stuff. For the most part, and for the first four chat windows only.
+Because:
+• On a small screen, there's a limit to how much the height can be. 
+• If there can be more chat windows than |primary| colours in the ainbow, then the device is fast enough to handle such loads. */
+DIV.Cl {right:0px !important; border:solid 2px;}
+   
+/* One can use the oauth element, if the apiproxy element is not present.
+Following that, the apiproxy IFRAME is usually present _and_ hidden, but works :). */
 
-/* CHAT WINDOW: these are inside an iframe, which should be excluded now (26.04.2017). */
-/* chat window title (name) widths to show controls */
+/* CHAT WINDOW 1: PURPLE */
+IFRAME[id^='apiproxy'] + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl {border-color:#6A5ACD;}
+/* is: #6A5ACD purple; Should work. */
+
+/* CHAT WINDOW 2: BLUE */
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl {border-color:#0077ee;}
+
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl[style*='36px'] {bottom:40px !important;}
+
+/* CHAT WINDOW 3: GREEN */
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl {border-color:#00db73;}
+
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:80px !important;}
+
+/* CHAT WINDOW 4: YELLOW */
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl {border-color:yellow;}
+
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:120px !important;}
+
+/* CHAT WINDOW 4: ORANGE */
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl {border-color:orange;}
+
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:156px !important;}
+
+/* CHAT WINDOW 4: RED */
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl {border-color:red;}
+   
+IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:192px !important;}
+
+/* DIV.Cl:first-child cannot be used, because it affects all divs in the containing block. But — the chat window DIV always has a preceding element :) */
+
+/* pink for later ;) */
+/* add 2+2px for top and bottom border during each following iteration. */
+
+/* CHAT WINDOW: these are inside an IFRAME, which should be excluded now (26.04.2017). */
+
+/* CHAT WINDOW TITLE (name) widths to show controls */
 /* DIV.xB {width:55%;} */
 
-/* This tests to see, if stuff works. Comment in, when not needed. */
+/* CHAT WINDOW TITLE: Tests to see, if stuff works. Comment in, when not needed. */
 /* DIV.xB {border:solid 1px yellow;} */
 
 /* chat window text */
