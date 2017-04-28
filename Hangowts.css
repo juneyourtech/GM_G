@@ -14,9 +14,16 @@ https://github.com/stylish-userstyles/stylish/wiki/Applying-styles-to-specific-s
 DIV.gb_4f {min-width:500px !important;}
 /* stopped at min-width:682px */
 
-/* Unknown location, whole viewport, causes a horizontal scrollbar; affects min-width and min-height. */
+/* CLASSIC LOGIN STRIP, ACCOUNT LINK */
+DIV.g-Ue-OkO9ve {margin-left:0px;}
+DIV#gbg {background-color:#2d2d2d; border-left:solid 1px Gray; padding-right:0px;}
+   
+/* Unknown location, whole viewport, causes a horizontal scrollbar; affects min-width and min-height. Contains left-side menu. */
 DIV.g-Ue-Ja-t {min-width:310px; min-height:320px;}
+DIV.bdXzDb {top:29px;}
+/* ^ This has z-index at 102... */
 
+/* Follows .g-Ue-Ja-t */
 DIV.g-Ue-ad {min-height:320px;}
 
 /* Hangouts logo height adjustment: */
