@@ -40,13 +40,13 @@ DIV.g-Ue-kc {width:75%; max-width:400px;}
 Because:
 • On a small screen, there's a limit to how much the height can be. 
 • If there can be more chat windows than |primary| colours in the rainbow, then the device is fast enough to handle such loads. */
-DIV.Cl {right:0px !important; border:solid 2px;}
+DIV.Cl {right:0px !important; border:solid 2px transparent;}
    
 /* One can use the oauth element, if the apiproxy element is not present.
 Following that, the apiproxy IFRAME is usually present _and_ hidden, but works :). */
 
 /* CHAT WINDOW 1: PURPLE */
-IFRAME[id^='apiproxy'] + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl {border-color:#6A5ACD;}
+IFRAME[id^='apiproxy'] + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl {border:solid 2px; border-color:#6A5ACD;}
 /* is: #6A5ACD purple; Should work. */
 
 /* CHAT WINDOW 2: BLUE */
