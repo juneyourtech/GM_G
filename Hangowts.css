@@ -87,7 +87,7 @@ IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[sty
 DIV.kFx1Ae-xdwExf-eb-m IMG {display:none;}
    
 /* background image author (26.04.2017) */
-GM_addStyle("HTML.g-Ue .g-Ue-ad .g-Qx-r4m2rf-wZVHld {display:none;}")
+HTML.g-Ue .g-Ue-ad .g-Qx-r4m2rf-wZVHld {display:none;}
 
 /* right block */
 DIV.g-Ue-v0h5Oe {display:none; top:70px; left:5px; width:auto; min-width:unset; min-width:64px; max-width:unset; min-height:160px; z-index:-1;}
