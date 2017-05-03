@@ -17,12 +17,15 @@ DIV.gb_4f {min-width:500px !important;}
 /* Firefox-compatible HEADER */
 DIV.gb_6f {min-width:320px !important;}
 
-/* RIGHT-SIDE USER LINK (Firefox). */
+/* HEADER: ITEMS */
 DIV.gb_T .gb_bg {display:block; padding-left:0px; padding-right:0px;}
 /* Original: display:flex. Original paddings are from .gb_jb */
 
 /* LOGO (Firefox) */
 DIV.gb_1b {padding:0px 0px;}
+
+/* RIGHT-SIDE ITEMS and USER LINK (Firefox). */
+DIV.gb_Wc {float:left;}
 
 /* CLASSIC HEADER STRIP (IceCat), USER LINK */
 DIV.g-Ue-OkO9ve {margin-left:0px;}
