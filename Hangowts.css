@@ -14,8 +14,19 @@ https://github.com/stylish-userstyles/stylish/wiki/Applying-styles-to-specific-s
 DIV.gb_4f {min-width:500px !important;}
 /* stopped at min-width:682px */
 
-/* CLASSIC LOGIN STRIP, ACCOUNT LINK */
+/* Firefox-compatible HEADER */
+DIV.gb_6f {min-width:320px !important;}
+
+/* RIGHT-SIDE USER LINK (Firefox). */
+DIV.gb_T .gb_bg {display:block; padding-left:0px; padding-right:0px;}
+/* Original: display:flex. Original paddings are from .gb_jb */
+
+/* LOGO (Firefox) */
+DIV.gb_1b {padding:0px 0px;}
+
+/* CLASSIC HEADER STRIP (IceCat), USER LINK */
 DIV.g-Ue-OkO9ve {margin-left:0px;}
+ /* ^ container */
 DIV#gbg {background-color:#2d2d2d; border-left:solid 1px Gray; padding-right:0px;}
    
 /* Unknown location, whole viewport, causes a horizontal scrollbar; affects min-width and min-height. Contains left-side menu. */
@@ -41,43 +52,47 @@ Because:
 • On a small screen, there's a limit to how much the height can be. 
 • If there can be more chat windows than |primary| colours in the rainbow, then the device is fast enough to handle such loads. */
 DIV.Cl {right:0px !important; border-style:solid; border-width:2px;}
+
+DIV.Cl[style*='36px'] {width:293px !important;}
+/* This makes minimised chat windows longer, so that a message received from another person is visible. */
    
-/* One can use the oauth element, if the apiproxy element is not present.
-Following that, the apiproxy IFRAME is usually present _and_ hidden, but works :). */
+/* The tildes are used instead of pluses to cover _any_ DIV.Cl sibling elements and not adjacent sibling elements (side-by-side), because the code is dynamic, and some extra elements are often added _before_ the first DIV.Cl element and _between_ later DIV.Cl elements, thus breaking inheritance with + selectors. The tilde is used to ensure, that colors and positions are always implemented. */
 
 /* CHAT WINDOW 1: PURPLE */
-IFRAME[id^='apiproxy'] + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl {border-color:#6A5ACD;}
+DIV.Cl {border-color:#6A5ACD;}
 /* is: #6A5ACD purple; Should work. */
 
 /* CHAT WINDOW 2: BLUE */
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl {border-color:#0077ee;}
+DIV.Cl ~ DIV.Cl {border-color:#0077ee;}
 
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl[style*='36px'] {bottom:40px !important;}
+DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(36px + 4px) !important;}
 
 /* CHAT WINDOW 3: GREEN */
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl {border-color:#00db73;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl {border-color:#00db73;}
 
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:80px !important;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(2 * (36px + 4px)) !important;}
 
 /* CHAT WINDOW 4: YELLOW */
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl {border-color:yellow;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl {border-color:yellow;}
 
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:120px !important;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(3 * (36px + 4px)) !important;}
 
 /* CHAT WINDOW 5: ORANGE */
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl {border-color:orange;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl {border-color:orange;}
 
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:156px !important;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(4 * (36px + 4px)) !important;}
 
 /* CHAT WINDOW 6: RED */
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl, IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl {border-color:red;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl {border-color:red;}
    
-IFRAME[id^='apiproxy'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'], IFRAME[id^='oauth2relay'] + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl + DIV.Cl[style*='36px'] {bottom:192px !important;}
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(5 * (36px + 4px)) !important;}
 
-/* DIV.Cl:first-child cannot be used, because it affects all divs in the containing block. But — the chat window DIV always has a preceding element :) */
+/* CHAT WINDOW 7: PINK */
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl {border-color:HotPink;}
 
-/* pink for later ;) */
-/* add 2+2px for top and bottom border during each following iteration. */
+DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(6 * (36px + 4px)) !important;}
+
+/* Instead of making manually calculated bottom positions with each iteration, it's easier to use calc: 36px is the base height, 4px consists of the top- and bottom borders that are each 2px. While it's possible to use CSS variables, then it's resource-intensive, because the browser has to parse through each element. */
 
 /* CHAT WINDOW: these are inside an IFRAME, which should be excluded now (26.04.2017). */
 
