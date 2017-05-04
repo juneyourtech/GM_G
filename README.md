@@ -22,13 +22,13 @@ https://archive.mozilla.org/pub/mobile/releases/31.3.0esr/android-armv6/
 
 
 Errata and considerations:
-* Desktop Hangouts, self-explanatory as it is, is very resource-intensive even on desktops.
+* Desktop Hangouts, self-explanatory as it is, is very resource-intensive, even on desktops.
   The slowest part is loading the contacts list. On mobile, it's also typing text in chat.
   
   With IceCatMobile (38.8.0), Hangouts load and behavior is faster than in Firefox (44.0).
   
-  In Firefox (44.0), the contacts list takes about 1.5 minutes to load after displaying the 
-  Hangouts site.
+  In Firefox (44.0) on an 800 MHz phone, the contacts list takes about 1.5 minutes to load 
+  after displaying the Hangouts site.
   
 * The userstyle is designed for a 320x480-pixel screen resolution, and works with greater 
   resolutions, but has not yet been designed for smaller screen resolutions, like 240x320, 
