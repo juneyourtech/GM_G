@@ -4,11 +4,19 @@
 https://github.com/stylish-userstyles/stylish/wiki/Applying-styles-to-specific-sites
 */
 
-@media only screen and (max-width:320px) { HTML, BODY {width:320px;}  DIV.g-Ue-Ja-t {max-width:320px;}  DIV.Cl {max-width:255px !important;}  DIV.Ih {width:100%;} }
+@media only screen and (max-width:320px) { HTML, BODY {width:320px;}  DIV.g-Ue-Ja-t {max-width:320px;}  DIV.Cl {max-width:255px !important;}  DIV.g-Ue-OkO9ve ~ DIV.Cl {height:calc(100% - 35px) !important;}  DIV.Ih {width:100%;}  DIV.sh {position:absolute; top:72px; height:calc(100% - 72px);}  DIV.Ef {position:absolute; top:36px;} }
 /* DIV.g-Ue-Ja-t : most of it; was: 628px
- • DIV.Cl : chat window. height:375px !important; width:255px !important;
+ • DIV.Cl : chat window. |previous| height:375px !important; width:255px !important;
+   22.06.2017: In case of a classic header (w. IceCat), set height to a |calc|ulation.
  • DIV.Ih : chat window contents.
-   Use important, because there are many rules applied to element via JavaScript. */
+   Use important, because there are many rules applied to element via JavaScript. 
+ • DIV.sh : CHAT MESSAGE AREA. +22.06.2017. 
+ • DIV.Ef : CHAT TEXTAREA. +22.06.2017. This rule should put textarea to top when focussed (to allow for 
+   virtual keyboards and chat window height dynamically reacting to them).
+   .kq is dynamically added only on focus, but I could observe no effect with it, and it didn't work. 
+   Options: width:100%; background-color:#99CCFF; 
+   Comment: I was unable to set it to get to top only when focussed, per above issues w. .kq.
+   DIV.lZ is the child element. Just in case. */
 
 /* 320. top block, w. login stuff */
 DIV.gb_4f {min-width:500px !important;}
@@ -107,10 +115,6 @@ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bot
 
 /* CHAT WINDOW TEXTAREA */
 /* DIV.tk {width:86%;} */
-
-DIV.kq {position:absolute; top:36px; width:100%; background-color:#99CCFF;}
-/* Should put textarea to top when focussed (to allow for virtual keyboards).
-   .kq is dynamically added ony on focus. */
 
 /* background image */
 DIV.kFx1Ae-xdwExf-eb-m IMG {display:none;}
