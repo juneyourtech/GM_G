@@ -59,7 +59,7 @@ DIV.Cl {right:0px !important; border-style:solid; border-width:2px;}
 DIV.Cl[style*='36px'] {width:293px !important;}
 /* This makes minimised chat windows longer, so that a message received from another person is visible. */
    
-/* The tildes are used instead of pluses to cover _any_ DIV.Cl sibling elements and not adjacent sibling elements (side-by-side), because the code is dynamic, and some extra elements are often added _before_ the first DIV.Cl element and _between_ later DIV.Cl elements, thus breaking inheritance with + selectors. The tilde is used to ensure, that colors and positions are always implemented. */
+/* Below: The tildes are used instead of pluses to cover _any_ DIV.Cl sibling elements and not adjacent sibling elements (side-by-side), because the code is dynamic, and some extra elements are often added _before_ the first DIV.Cl element and _between_ later DIV.Cl elements, thus breaking inheritance with + selectors. The tilde is used to ensure, that colors and positions are always implemented. */
 
 /* CHAT WINDOW 1: PURPLE */
 DIV.Cl {border-color:#6A5ACD;}
@@ -95,7 +95,7 @@ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl {border-color:HotPi
 
 DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bottom:calc(6 * (36px + 4px)) !important;}
 
-/* Instead of making manually calculated bottom positions with each iteration, it's easier to use calc: 36px is the base height, 4px consists of the top- and bottom borders that are each 2px. While it's possible to use CSS variables, then it's resource-intensive, because the browser has to parse through each element. */
+/* Above: Instead of making manually calculated bottom positions with each iteration, it's easier to use 'calc': 36px is the base height, 4px consists of the top- and bottom borders that are each 2px. While it's possible to use CSS variables, then it's resource-intensive, because the browser has to parse through each element. */
 
 /* CHAT WINDOW: these are inside an IFRAME, which should be excluded now (26.04.2017). */
 
@@ -105,9 +105,12 @@ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bot
 /* CHAT WINDOW TITLE: Tests to see, if stuff works. Comment in, when not needed. */
 /* DIV.xB {border:solid 1px yellow;} */
 
-/* chat window text */
+/* CHAT WINDOW TEXTAREA */
 /* DIV.tk {width:86%;} */
 
+DIV.kq {position:absolute; top:36px; width:100%; background-color:#99CCFF;}
+/* Should put textarea to top when focussed (to allow for virutal keyboards).
+   .kq is dynamically added ony on focus. */
 
 /* background image */
 DIV.kFx1Ae-xdwExf-eb-m IMG {display:none;}
