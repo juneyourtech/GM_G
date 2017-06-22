@@ -109,7 +109,7 @@ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl ~ DIV.Cl[style*='36px'] {bot
 /* DIV.tk {width:86%;} */
 
 DIV.kq {position:absolute; top:36px; width:100%; background-color:#99CCFF;}
-/* Should put textarea to top when focussed (to allow for virutal keyboards).
+/* Should put textarea to top when focussed (to allow for virtual keyboards).
    .kq is dynamically added ony on focus. */
 
 /* background image */
