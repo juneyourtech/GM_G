@@ -21,15 +21,18 @@ DIV.gb_4f {min-width:500px !important;}
 DIV.gb_6f, DIV.gb_cg {min-width:320px !important;}
 /* No effect. .gb_cg added on 23.06.2017. */
 
-/* HEADER: ITEMS | since modified (probably) */
+DIV.gb_jf {height:34px;}
+/* 23.06.2017 */
+
+/* Header left AND right */
+DIV.gb_jf > .gb_R {height:34px; line-height:30px;}
+/* 23.06.2017. Affects right-side line-height, too. */
+
+/* HEADER: ITEMS | since modified (probably, likely) */
 DIV.gb_T .gb_bg {display:block; padding-left:0px; padding-right:0px;}
 /* Original: display:flex. Original paddings are from .gb_jb */
 
 /* LOGO (Firefox) */
-/* Header left and right */
-DIV.gb_jf > .gb_R {height:34px; line-height:30px;}
-/* 23.06.2017. Affects right-side line-height, too. */
-
 /* LOGO container width (element shared with .gb_R) */
 DIV.gb_Zb {min-width:172px !important;}
 
@@ -41,7 +44,7 @@ DIV.gb_1b, DIV.gb_0b {padding:0px 0px;}
 DIV.gb_ib {padding-left:0px; padding-right:0px;}
 
 DIV.gb_Wc {float:left;}
-/* Exists? */
+/* Does it still exist? */
 
 /* CLASSIC HEADER STRIP (IceCat), USER LINK */
 DIV.g-Ue-OkO9ve {margin-left:0px;}
