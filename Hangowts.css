@@ -17,21 +17,31 @@ https://github.com/stylish-userstyles/stylish/wiki/Applying-styles-to-specific-s
 DIV.gb_4f {min-width:500px !important;}
 /* stopped at min-width:682px */
 
-/* Firefox-compatible HEADER | inside DIV.g-Ue-OkO9ve , btw. */
-DIV.gb_6f {min-width:320px !important;}
+/* Firefox-compatible HEADER | inside DIV.g-Ue-OkO9ve , btw. | since modified */
+DIV.gb_6f, DIV.gb_cg {min-width:320px !important;}
+/* No effect. .gb_cg added on 23.06.2017. */
 
-/* HEADER: ITEMS */
+/* HEADER: ITEMS | since modified (probably) */
 DIV.gb_T .gb_bg {display:block; padding-left:0px; padding-right:0px;}
 /* Original: display:flex. Original paddings are from .gb_jb */
 
 /* LOGO (Firefox) */
-DIV.gb_jf > .gb_R {line-height:30px;}
+/* Header left and right */
+DIV.gb_jf > .gb_R {height:34px; line-height:30px;}
 /* 23.06.2017. Affects right-side line-height, too. */
 
-DIV.gb_1b {padding:0px 0px;}
+/* LOGO container width (element shared with .gb_R) */
+DIV.gb_Zb {min-width:172px !important;}
+
+/* LOGO sub-container padding */
+DIV.gb_1b, DIV.gb_0b {padding:0px 0px;}
 
 /* RIGHT-SIDE ITEMS and USER LINK (Firefox). */
+/* right-side container (shared with .gb_R) */
+DIV.gb_ib {padding-left:0px; padding-right:0px;}
+
 DIV.gb_Wc {float:left;}
+/* Exists? */
 
 /* CLASSIC HEADER STRIP (IceCat), USER LINK */
 DIV.g-Ue-OkO9ve {margin-left:0px;}
