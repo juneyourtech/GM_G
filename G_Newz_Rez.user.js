@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name        GOOG Newz Rez
 // @namespace   G_Newz_Rez
-// @description Site layout improvements for Google News in order to make the site load faster. Font fixes for long texts (Windows XP).
+// @description Site layout improvements for Google News in order to make the site load faster. Font fixes for long texts (Windows XP). Google and Google News are trade marks of Google/Alphabet.
 // @include     https://news.google.com/*
-// @version     0.1.
+// @version     0.1
 // @grant       GM_addStyle
 // ==/UserScript==
 // Notes:
