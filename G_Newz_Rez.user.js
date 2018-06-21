@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
-// @name        Googl Newz Rez
+// @name        GOOG Newz Rez
 // @namespace   G_Newz_Rez
-// @description Google Plus font fix for long texts (Windows XP)
+// @description Site layout improvements for Google News in order to make the site load faster. Font fixes for long texts (Windows XP).
 // @include     https://news.google.com/*
-// @version     1
+// @version     0.1.
 // @grant       GM_addStyle
 // ==/UserScript==
 // Notes:
@@ -23,7 +23,7 @@ GM_addStyle("DIV.gb_oc.gb_g {transform:none; transition:none;}");
 GM_addStyle("DIV.gb_oc:not(.gb_Za) {transform:none; display:inline-table;}");
 
 //Spring 2018 redesign to accommodate the scrollbar. Right/main side.
-GM_addStyle("c-wiz.eejsDc {overflow-y:initial; font-family:\'Arial\',\'Helvetica\',\'Roboto\',\'RobotoDraft\',\'sans-serif\';}");
+GM_addStyle("c-wiz.eejsDc {overflow-y:initial; font-family:\'Arial\',\'Helvetica\',\'sans-serif\';}");
 //19.06.2018
 
 //pre-Spring 2018 design
@@ -53,7 +53,7 @@ GM_addStyle("DIV.gb_Ac {min-width:240px !important;}")
 GM_addStyle("DIV.gb_jc {bottom:unset !important; top:unset !important;}")
 
 //19.11.2017:
-GM_addStyle("DIV.gb_Fe, DIV.gb_kc, DIV.gb_oc {top:125px !important; transition:none; font-family:\'Arial\',\'Helvetica\',\'Roboto\',\'RobotoDraft\',\'sans-serif\'; height:auto;}")
+GM_addStyle("DIV.gb_Fe, DIV.gb_kc, DIV.gb_oc {top:125px !important; transition:none; font-family:\'Arial\',\'Helvetica\',\'sans-serif\'; height:auto;}")
 //other classes: "gb_Fe gb_kc gb_g gb_lc gb_mc"
 //117px
 //06.04.2018: .gb_oc = SECTIONS left section
@@ -96,7 +96,7 @@ GM_addStyle("C-WIZ.PaqQNc SPAN.JoEvud {display:inline;}")
 //THIS SHOULD SEPARATE HEADER INFORMATION
 
 //font family except heading
-GM_addStyle("C-WIZ.PaqQNc:not([role=\"heading\"]), C-WIZ.PaqQNc:not(.hzdq5d) {font-family:\'Arial\',\'Helvetica\',\'Roboto\',\'RobotoDraft\',\'sans-serif\';}")
+GM_addStyle("C-WIZ.PaqQNc:not([role=\"heading\"]), C-WIZ.PaqQNc:not(.hzdq5d) {font-family:\'Arial\',\'Helvetica\',\'sans-serif\';}")
 
 //GM_addStyle("DIV#yDmH0d .lPV2Xe .ME7ew {color:navy;}")
 //works, after finally fixing a previous mistake
@@ -149,4 +149,4 @@ GM_addStyle("BODY.gb_8d A {color:red;}")
 //DIV#yDmH0d .lPV2Xe:focus .ME7ew,
 //DIV#yDmH0d.lPV2Xe:hover .ME7ew:hover 
 
-//GM_addStyle(".MU4aFb:hover, .gnqflc:hover, .oyJxcb:hover, .adH5zf:hover, .NofAff:hover, .dq4Q8b:hover .WwX3Vd, .QWO3dd:hover .jpJIDf, .JD2Nge:hover:after, .PC1R3e:hover:after, .HksA2c:hover .lp2Tfd {color:#1A237E;}")
+/* GM_addStyle(".MU4aFb:hover, .gnqflc:hover, .oyJxcb:hover, .adH5zf:hover, .NofAff:hover, .dq4Q8b:hover .WwX3Vd, .QWO3dd:hover .jpJIDf, .JD2Nge:hover:after, .PC1R3e:hover:after, .HksA2c:hover .lp2Tfd {color:#1A237E;}") */
